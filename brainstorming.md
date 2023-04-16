@@ -11,11 +11,6 @@
 2. Restaurant Finder
 3. Random Recipe Finder
 
-## Features
-- Search bar
-- Generate list of 10 random breweries in the US
-- Note: No pictures needed
-
 ## New App - Evaluate and Categorize
 1. Brewery Finder
     - **Description:** Allows users to find breweries based on location or other search criteria. Using Open Brewery DB, this mobile app will generate a set of breweries to choose from.
