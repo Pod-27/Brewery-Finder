@@ -11,7 +11,7 @@
 
 ### Description 
 
-**Allows users to find any random 10 breweries in the US.**
+**Allows users to find breweries based on location or other search criteria. Using Open Brewery DB, this mobile app will generate a set of breweries to choose from.**
 
 ### App Evaluation
 
