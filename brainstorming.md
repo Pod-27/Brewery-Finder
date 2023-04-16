@@ -13,10 +13,6 @@
 
 ## New App - Evaluate and Categorize
 1. Brewery Finder
-    - **Description:** Allows users to find breweries based on location or other search criteria. Using Open Brewery DB, this mobile app will generate a set of breweries to choose from.
-
-    - **Category:** Lifestyle
-    
     - **Mobile:** Mobile only experience. Users will find breweries on the go
 
     - **Story:** Everybody loves a drink. And the brewery finder app saves you the time and energy of zooming in and out of Google Maps trying to find the nearest brewery. Now with this new app, all you need is to provide your zip code and the app gives you the best options, all within a short distance from your current location!
@@ -27,29 +23,26 @@
 
     - **Scope:** The brewery finder app is a mobile application that helps users locate and explore breweries in their local area or in a specific city. Users can search for breweries based on location, beer type, and other relevant criteria, and view a list of nearby breweries with their ratings, hours of operation, and other relevant information. The app also includes a map view that shows the locations of nearby breweries, and users can click on a brewery to view more detailed information, save their favorite breweries, and filter the brewery list based on their preferences. The app is free to download and use, and aims to provide a simple and user-friendly way for beer enthusiasts to discover new breweries and plan their outings.
    
-
 2. Restaurant Finder
-    - **Category:** Lifestyle
 
     - **Mobile:** Mobile only experience. Users will find restaurants on the go.
 
-    - **Story:** 
+    - **Story:** Helps foodies find restaurants that cater to their food preferences and dietary restrictions.
 
-    - **Market:**
+    - **Market:** Anyone looking for a specific restaurant or open restaurants nearby.
 
-    - **Habit:**
+    - **Habit:** Users will use this when they want to try new cuisines or are in the mood for something specific.
 
-    - **Scope:**
+    - **Scope:** Search bar to input location, restaurant name, or other criteria. List with restaurant unfo such as name, location, and phone number.
 
 3. Random Recipe Finder
-    - **Category:** Lifestyle
 
     - **Mobile:** Mobile only experience. Users will find random recipes.
 
-    - **Story:** 
+    - **Story:** Some people are too busy plan meals ahead of time and may not want to order out.
 
-    - **Market:**
+    - **Market:** Anyone who wants a recipe chosen for them.
 
-    - **Habit:**
+    - **Habit:** Users will use this whenever they lose track of time or are too busy to plan ahead.
 
-    - **Scope:**
+    - **Scope:** A list of random recipes is generated at the press of a buttom.
