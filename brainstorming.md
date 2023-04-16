@@ -21,6 +21,8 @@
     - **Description:** Allows users to find breweries based on location or other search criteria. Using Open Brewery DB, this mobile app will generate a set of breweries to choose from.
 
     - **Category:** Lifestyle
+    
+    - **Mobile:** Mobile only experience. Users will find breweries on the go
 
     - **Story:** Everybody loves a drink. And the brewery finder app saves you the time and energy of zooming in and out of Google Maps trying to find the nearest brewery. Now with this new app, all you need is to provide your zip code and the app gives you the best options, all within a short distance from your current location!
 
