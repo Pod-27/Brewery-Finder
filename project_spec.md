@@ -17,7 +17,7 @@
 
 <!-- Evaluation of your app across the following attributes -->
 
-- **Category:** Search App
+- **Category:** Lifestyle
 
 - **Mobile:** Mobile only experience. Users will find breweries on the go.
 
