@@ -7,6 +7,7 @@ Submitted by:
 - **Mnumzana Moyo**
 - **Alec Gong**
 - **Amrinder Singh**
+- **Sai Deeduvanu** 
 
 Time spent: **X** hours spent in total
 
@@ -33,7 +34,7 @@ The following REQUIRED files are included:
   - [x] Final app idea chosen
 - [x] Included 📄 `project_spec.md`, which contains:
   - [x] App Overview: Description and evaluation
-  - [ ] App Spec: User features, Chosen API(s), User Interactions
+  - [x] App Spec: User features, Chosen API(s), User Interactions
   - [ ] Wireframe image(s)
 
 The following BONUS features are implemented:
