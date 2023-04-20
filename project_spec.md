@@ -35,31 +35,42 @@
 
 Required Features:
 
-- **fill in here**
-- ...
+- **User can search for a specific brewery**
+- **User can find breweries near them**
+- **User can create an account**
+- **User can save favorite breweries**
 
 Stretch Features:
-
-- **fill in here**
-- ...
 
 ### 2. Chosen API(s)
 
 - **Open Brewery DB**
-  - **list associated required feature here**
-  - ...
-- ...
+  - **User can search for a specific brewery**
+
+  - **User can find breweries based on location**
+
+  - **User can save favorite breweries**
+
 
 ### 3. User Interaction
 
 Required Feature
 
-- **list first user action here**
-  - => **list result of user action here**
-  - ...
-- **list second user action here**
-  - => **list result of user action here**
-  - ...
+- **Get Brewery: User can search for a specific brewery**
+  - User enters brewery name
+    - => **Results displayed based on information entered**
+ 
+- **Get Breweries: User can find breweries near them**
+  - User enters a location
+    - => **Results displayed based on location entered**
+  
+- **Get Favorites List: User can create an account** 
+  - User creates an account
+    - => **User has access to a favorites list**
+		
+- **Get Breweries: User can save favorite breweries**
+   - User chooses to save a brewery
+      - => **Brewery information added to favorites list**
 
 ## Wireframes
 
