@@ -41,6 +41,7 @@ Required Features:
 - **User can save favorite breweries**
 
 Stretch Features:
+- **User can rate breweries**
 
 ### 2. Chosen API(s)
 
