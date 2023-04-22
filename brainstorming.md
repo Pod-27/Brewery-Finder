@@ -46,3 +46,39 @@
     - **Habit:** Users will use this whenever they lose track of time or are too busy to plan ahead.
 
     - **Scope:** A list of random recipes is generated at the press of a buttom.
+
+4. Fifa Price Tracker
+
+    - **Mobile:** Mobile only experience. Users will find player prices.
+
+    - **Story:** Some FUT players are frustrated by the sudden oscillation of prices on the market and need constant updates and alerts.
+
+    - **Market:** millions of FUT players.
+
+    - **Habit:** Users will use this every day because they are addicted to the game.
+
+    - **Scope:** A list of players and their latest bid and bin prices.
+
+5. Jokes Generator
+
+    - **Mobile:** Mobile only experience. Users will find jokes.
+
+    - **Story:** Who doesn't want a good laugh?
+
+    - **Market:** To the vast majority glued to their phones.
+
+    - **Habit:** This app should be a good way to pass time, say on the subway or in class.
+
+    - **Scope:** A list of dark and funny jokes.
+
+6. Streaming Availability
+
+    - **Mobile:** Mobile only experience. Users will find where to stream movies and TV shows.
+
+    - **Story:** TV shows and movies are scattered throughout differnt streaming services. Finding availability can be a pain
+
+    - **Market:** all the movie and TV enjoyers
+
+    - **Habit:** They can search whenever they feel like sitting down and watch something!
+
+    - **Scope:** All the shows and movies on IMDB.
