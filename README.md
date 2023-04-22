@@ -9,13 +9,13 @@ Submitted by:
 - **Amrinder Singh**
 - **Sai Deeduvanu** 
 
-Time spent: **X** hours spent in total
+Time spent: **3** hours spent in total
 
 ## Summary
 
 This document provides an overview, project spec, and wireframes for our team's capstone project: An app that **allows users to find breweries based on location or other search criteria.**
 
-If we had to describe this milestone in three (3) emojis, they would be: **emojis here**
+If we had to describe this milestone in three (3) emojis, they would be: **💡🌱🤝**
 
 ## Milestone Requirements
 
