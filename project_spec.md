@@ -82,6 +82,7 @@ Required Feature
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
+https://rkcggm.axshare.com/?id=ksr3x8&p=brewery_app_wireframe
 
 ## Build Notes
 
