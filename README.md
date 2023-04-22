@@ -29,7 +29,7 @@ The following REQUIRED features are completed:
 The following REQUIRED files are included:
 
 - [x] Included 📄 `brainstorming.md`, which contains:
-  - [ ] Our initial brainstorming ideas (6+ ideas)
+  - [x] Our initial brainstorming ideas (6+ ideas)
   - [x] 5-category evaluation of our top 3 ideas
   - [x] Final app idea chosen
 - [x] Included 📄 `project_spec.md`, which contains:
