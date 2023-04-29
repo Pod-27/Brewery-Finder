@@ -3,22 +3,40 @@ package com.example.breweryfinderapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+
+
+
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+
+import android.widget.SearchView
+
+
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import okhttp3.Headers
 
 class MainActivity : AppCompatActivity() {
+
+
     private lateinit var breweryList: MutableList<Triple<String,String,String>>
     private lateinit var rvBreweries: RecyclerView
+
+    private final lateinit var brewerySearch: SearchView
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
         breweryList = arrayListOf()
         rvBreweries = findViewById(R.id.brewery_list)
+
+
+        brewerySearch = findViewById(R.id.search_bar)
 
         getBrewery()
     }
