@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/brewery_list"
         android:layout_width="match_parent"
@@ -35,6 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/prompt"
         app:layout_constraintVertical_bias="0.096" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
