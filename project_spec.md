@@ -92,6 +92,8 @@ process, or what you learned this unit!
 For Milestone 2, include **2+ GIFs** of the build process here!
 
 ![Brewery Finder rvGIF](https://user-images.githubusercontent.com/123886642/235287987-12ef999f-9b82-49f4-85f9-a3d3507224f4.gif)
+
+
 ![Brewery Finder LoginGIF](https://user-images.githubusercontent.com/123886642/235288100-73bc1da0-4617-4bb1-9980-c76f36cdb0ab.gif)
 
 ## License!
