@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         // below line is to get our inflater
         val inflater = menuInflater
 
-        // inside inflater we are inflating our menu file.activi
+        // inside inflater we are inflating our menu file.
         inflater.inflate(R.menu.search_menu, menu)
 
         // below line is to get our menu item.
@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
             if (item.getBreweryName().lowercase(Locale.ROOT).contains(text.lowercase(Locale.getDefault()))) {
                 // if the item is matched we are
                 // adding it to our filtered list.
-                filteredlist.add(item as BreweryModel)
+                filteredlist.add(item)
             }
         }
         if (filteredlist.isEmpty()) {
