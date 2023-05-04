@@ -7,7 +7,18 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class BreweryAdapter(private var breweryList: ArrayList<BreweryModel>) : RecyclerView.Adapter<BreweryAdapter.ViewHolder>() {
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+
+    private lateinit var myListener: onItemClickListener
+
+    interface onItemClickListener {
+        fun onItemClick(position : Int)
+    }
+
+    fun setOnItemClickListener(listener: onItemClickListener) {
+        myListener = listener
+    }
+
+    class ViewHolder(view: View, listener: onItemClickListener) : RecyclerView.ViewHolder(view) {
         val breweryName: TextView
         val breweryStreet: TextView
         val breweryCity: TextView
@@ -16,6 +27,10 @@ class BreweryAdapter(private var breweryList: ArrayList<BreweryModel>) : Recycle
             breweryName = view.findViewById(R.id.brewery_name)
             breweryStreet = view.findViewById(R.id.street)
             breweryCity = view.findViewById(R.id.city)
+
+            view.setOnClickListener {
+                listener.onItemClick(adapterPosition)
+            }
         }
     }
 
@@ -35,7 +50,7 @@ class BreweryAdapter(private var breweryList: ArrayList<BreweryModel>) : Recycle
             .inflate(R.layout.newbreweryitem, parent, false)
 
 
-        return ViewHolder(view)
+        return ViewHolder(view, myListener)
     }
 
     override fun getItemCount() = breweryList.size
@@ -44,7 +59,7 @@ class BreweryAdapter(private var breweryList: ArrayList<BreweryModel>) : Recycle
 //        holder.breweryName.text = breweryList[position]
 //        holder.breweryStreet.text = breweryList[position].second
 //        holder.breweryCity.text = breweryList[position].third
-        val model: BreweryModel = breweryList[position] as BreweryModel
+        val model: BreweryModel = breweryList[position]
         holder.breweryName.text = model.getBreweryName()
         holder.breweryStreet.text = model.getBreweryStreet()
         holder.breweryCity.text = model.getBreweryCity()

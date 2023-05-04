@@ -1,6 +1,7 @@
 package com.example.breweryfinderapp
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
@@ -15,6 +16,7 @@ import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import okhttp3.Headers
 import java.util.*
+import kotlin.collections.ArrayList
 
 
 class MainActivity : AppCompatActivity() {
@@ -27,6 +29,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var adapter: BreweryAdapter
 
+    private lateinit var breweryItemDataList: ArrayList<ArrayList<String>>
+
     private final lateinit var brewerySearch: SearchView
 
 
@@ -34,6 +38,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         breweryList = arrayListOf()
+        breweryItemDataList = arrayListOf(arrayListOf())
         rvBreweries = findViewById(R.id.brewery_list)
 
 //        brewerySearch = findViewById(R.id.search_bar)
@@ -99,7 +104,7 @@ class MainActivity : AppCompatActivity() {
     private fun getBrewery() {
         val client = AsyncHttpClient()
 
-        client["https://api.openbrewerydb.org/v1/breweries?per_page=200", object : JsonHttpResponseHandler() {
+        client["https://api.openbrewerydb.org/v1/breweries?per_page=100", object : JsonHttpResponseHandler() {
             override fun onFailure(
                 statusCode: Int,
                 headers: Headers?,
@@ -119,14 +124,38 @@ class MainActivity : AppCompatActivity() {
                         val name = array.getJSONObject(i).getString("name")
                         val street = array.getJSONObject(i).getString("street")
                         val city = array.getJSONObject(i).getString("city")
+                        val state = array.getJSONObject(i).getString("state")
+                        val phone = array.getJSONObject(i).getString("phone")
+                        val website = array.getJSONObject(i).getString("website_url")
 
                         breweryList.add(BreweryModel(name, street, city))
+                        val arrayList = ArrayList<String>()
+                        arrayList.add(name)
+                        arrayList.add(street)
+                        arrayList.add(city)
+                        arrayList.add(state)
+                        arrayList.add(phone)
+                        arrayList.add(website)
+                        breweryItemDataList.add(arrayList)
                     }
                     adapter = BreweryAdapter(breweryList)
                     rvBreweries.adapter = adapter
                     rvBreweries.layoutManager = LinearLayoutManager(this@MainActivity)
                     rvBreweries.addItemDecoration(DividerItemDecoration(this@MainActivity,LinearLayoutManager.VERTICAL))
+                    adapter.setOnItemClickListener(object : BreweryAdapter.onItemClickListener {
+                        override fun onItemClick(position: Int) {
+                            Toast.makeText(this@MainActivity, "You clicked on Brewery Item no. " + (position + 1).toString(), Toast.LENGTH_SHORT).show()
+                            val intent = Intent(this@MainActivity, BreweryItemActivity::class.java)
+                            intent.putExtra("name", breweryItemDataList[position+1][0])
+                            intent.putExtra("street", breweryItemDataList[position+1][1])
+                            intent.putExtra("city", breweryItemDataList[position+1][2])
+                            intent.putExtra("state", breweryItemDataList[position+1][3])
+                            intent.putExtra("phone", breweryItemDataList[position+1][4])
+                            intent.putExtra("website", breweryItemDataList[position+1][5])
+                            startActivity(intent)
+                        }
 
+                    })
                 }
             }
 
