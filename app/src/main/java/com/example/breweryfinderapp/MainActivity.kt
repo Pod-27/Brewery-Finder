@@ -104,7 +104,7 @@ class MainActivity : AppCompatActivity() {
     private fun getBrewery() {
         val client = AsyncHttpClient()
 
-        client["https://api.openbrewerydb.org/v1/breweries?per_page=100", object : JsonHttpResponseHandler() {
+        client["https://api.openbrewerydb.org/v1/breweries?per_page=200", object : JsonHttpResponseHandler() {
             override fun onFailure(
                 statusCode: Int,
                 headers: Headers?,
@@ -144,7 +144,7 @@ class MainActivity : AppCompatActivity() {
                     rvBreweries.addItemDecoration(DividerItemDecoration(this@MainActivity,LinearLayoutManager.VERTICAL))
                     adapter.setOnItemClickListener(object : BreweryAdapter.onItemClickListener {
                         override fun onItemClick(position: Int) {
-                            Toast.makeText(this@MainActivity, "You clicked on Brewery Item no. " + (position + 1).toString(), Toast.LENGTH_SHORT).show()
+                            //Toast.makeText(this@MainActivity, "You clicked on Brewery Item no. " + (position + 1).toString(), Toast.LENGTH_SHORT).show()
                             val intent = Intent(this@MainActivity, BreweryItemActivity::class.java)
                             intent.putExtra("name", breweryItemDataList[position+1][0])
                             intent.putExtra("street", breweryItemDataList[position+1][1])
