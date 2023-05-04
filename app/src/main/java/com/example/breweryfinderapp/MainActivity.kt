@@ -99,7 +99,7 @@ class MainActivity : AppCompatActivity() {
     private fun getBrewery() {
         val client = AsyncHttpClient()
 
-        client["https://api.openbrewerydb.org/v1/breweries", object : JsonHttpResponseHandler() {
+        client["https://api.openbrewerydb.org/v1/breweries?per_page=200", object : JsonHttpResponseHandler() {
             override fun onFailure(
                 statusCode: Int,
                 headers: Headers?,
