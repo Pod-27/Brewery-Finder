@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class BreweryAdapter(private val breweryList: MutableList<Triple <String, String, String>>) : RecyclerView.Adapter<BreweryAdapter.ViewHolder>() {
+class BreweryAdapter(private var breweryList: ArrayList<BreweryModel>) : RecyclerView.Adapter<BreweryAdapter.ViewHolder>() {
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val breweryName: TextView
         val breweryStreet: TextView
@@ -17,6 +17,15 @@ class BreweryAdapter(private val breweryList: MutableList<Triple <String, String
             breweryStreet = view.findViewById(R.id.street)
             breweryCity = view.findViewById(R.id.city)
         }
+    }
+
+    fun filterList(filterList: ArrayList<BreweryModel>) {
+        // below line is to add our filtered
+        // list in our course array list.
+        breweryList = filterList
+        // below line is to notify our adapter
+        // as change in recycler view data.
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -32,12 +41,16 @@ class BreweryAdapter(private val breweryList: MutableList<Triple <String, String
     override fun getItemCount() = breweryList.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.breweryName.text = breweryList[position].first
-        holder.breweryStreet.text = breweryList[position].second
-        holder.breweryCity.text = breweryList[position].third
-
+//        holder.breweryName.text = breweryList[position]
+//        holder.breweryStreet.text = breweryList[position].second
+//        holder.breweryCity.text = breweryList[position].third
+        val model: BreweryModel = breweryList[position] as BreweryModel
+        holder.breweryName.text = model.getBreweryName()
+        holder.breweryStreet.text = model.getBreweryStreet()
+        holder.breweryCity.text = model.getBreweryCity()
     }
 
-
-
+    init {
+        this.breweryList = breweryList
+    }
 }

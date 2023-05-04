@@ -3,4 +3,5 @@
     <string name="brewery_name">(405) Brewing Co</string>
     <string name="brewery_address">1716 Topeka St</string>
     <string name="brewery_city">Norman</string>
+    <string name="search">Search</string>
 </resources>
