@@ -15,4 +15,12 @@
     <color name="spotify_gray_light">#b3b3b3</color>
     <color name="blueBlack">#111f28</color>
     <color name="tanAccent">#e3cdb3</color>
+    <color name="light_red">#FFB6C1</color>
+    <color name="dark_red">#8B0000</color>
+    <color name="orange_red">#FF4500</color>
+    <color name="cream">#F5F5DC</color>
+    <color name="red">#FF0000</color>
+    <color name="purple_black">#191933</color>
+    <color name="brewies">#0D1028</color>
+    <color name="light_pink">#EF2668</color>
 </resources>
