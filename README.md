@@ -44,7 +44,7 @@ The following EXTRA features are implemented:
 
 Here's a video that demos all of the app's implemented features:
 
-<img src='https://youtu.be/KTwK42BuGg8' title='Video Demo' width='' alt='Video Demo' />
+<img src='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWQ1M2E2ZTZiMjliZjc4ZTU4YmQwNmM2YmI5OTY2NTFmMjM4YWNhNiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/xshC65kRukqQoU3UZS/giphy.gif' title='Video Demo' width='' alt='Video Demo' />
 
 VIDEO created with **your chosen video tool**
 
